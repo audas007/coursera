@@ -1,0 +1,16 @@
+a <- available.packages()
+head(rownames(a), 3) # show names of first few packages
+install.packages(c("slidify","ggplot2","devtools"))
+source("http://bioconductor.org/biocLite.R")
+biocLite()
+biocLite(c("GenomicFeatures", "AnnotationDbi"))
+library(ggplot2) # to get access to all functions of ggplot2
+## shows what functions you can access within this package
+> library(ggplot2)
+> search()
+ [1] ".GlobalEnv"            "package:ggplot2"       "package:BiocInstaller"
+ [4] "tools:RGUI"            "package:stats"         "package:graphics"     
+ [7] "package:grDevices"     "package:utils"         "package:datasets"     
+[10] "package:methods"       "Autoloads"             "package:base"         
+> 
+
